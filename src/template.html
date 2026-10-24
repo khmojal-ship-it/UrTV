@@ -42,10 +42,9 @@
   html.widget .dimmer,html.widget #credit,html.widget .top,html.widget .clockwrap,html.widget .bottom{display:none}
   html.widget .stage{height:auto;padding:0;display:block;transition:none}
   /* the launcher's cards, up to three: one fills the box; two side by side (the first on the right, as Arabic reads);
-     three: two side by side and the third the full width under them. At 1920 a pair is about 560 + 540 px with a 22 px gap. */
+     with three, the third keeps the same half-width as the first two instead of spanning the whole row. */
   html.widget .mid{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--cg,clamp(8px,2vw,22px));align-items:start}
   html.widget .mid.n2,html.widget .mid.n3{grid-template-columns:minmax(0,560fr) minmax(0,540fr)}
-  html.widget .mid .week.w3{grid-column:1/-1}
   html.widget .week{width:100%}
   html.widget .week.boxes{padding:max(1.7vh,10px) max(1.4vw,14px)}   /* the prayer boxes keep a clear, even distance from the card's edge */
   html,body{
